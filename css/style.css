@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Georgia, sans-serif;
+    font-weight: 400;
 }
 
 /* ---------- common styles ---------- */
@@ -29,12 +34,23 @@ section {
     color: #292929;
     font-family: Georgia, sans-serif;
     font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 130%; /* 22.1px */
     letter-spacing: 1.02px;
     border: none;
     cursor: pointer;
+}
+
+.btn:hover {
+    background: #ffb189;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h2 {
+    color: #545454;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%; /* 45.5px */
+    letter-spacing: 2.1px;
 }
 
 /* ---------- HEADER ---------- */
@@ -86,8 +102,6 @@ header .header__container {
     color: #CDCDCD;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 160%; /* 24px */
 }
 
@@ -143,7 +157,6 @@ main {
     max-width: 410px;
     color: #FFF;
     font-size: 44px;
-    font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 57.2px */
 
@@ -153,8 +166,6 @@ main {
     color: #CDCDCD;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 160%; /* 24px */
 }
 
@@ -179,20 +190,13 @@ main {
 
 .about__title {
     max-width: 370px;
-    color: #545454;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 45.5px */
-    letter-spacing: 2.1px;
 }
+
 
 .about__text {
     color: #4C4C4C;
     font-family: Arial, sans-serif;
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 160%; /* 24px */
 }
 
@@ -211,13 +215,7 @@ section.pets {
 
 .pets__title {
     max-width: 400px;
-    color: #545454;
     text-align: center;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 45.5px */
-    letter-spacing: 2.1px;
 }
 
 .our-pets-card-set {
@@ -242,7 +240,6 @@ section.pets {
     color: #545454;
     text-align: center;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 1.2px;
@@ -256,11 +253,15 @@ section.pets {
     color: #292929;
     font-family: Georgia, sans-serif;
     font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 130%; /* 22.1px */
     letter-spacing: 1.02px;
     cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: #F1CDB3;
+    border: 2px solid #FAFAFA;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------- SECTION HELP ---------- */
@@ -274,14 +275,7 @@ section.pets {
 
 .help__title {
     max-width: 308px;
-    color: #545454;
     text-align: center;
-    font-family: Georgia, sans-serif;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 45.5px */
-    letter-spacing: 2.1px;
 }
 
 .help__card-set {
@@ -309,10 +303,7 @@ section.pets {
 .help__card-text {
     color: #545454;
     text-align: center;
-    font-family: Georgia, sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 115%; /* 23px */
     letter-spacing: 1.2px;
 }
@@ -339,21 +330,11 @@ section.donation {
 
 .donation__title {
     max-width: 300px;
-    color:#545454;
-    font-family: Georgia, sans-serif;
-    font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 45.5px */
-    letter-spacing: 2.1px;
 }
 
 .bank-card__title {
     color: #545454;
-    font-family: Georgia, sans-serif;
     font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 110%; /* 16.5px */
     letter-spacing: 0.9px;
 }
@@ -369,10 +350,7 @@ section.donation {
 
 .bank-card__text {
     color: #545454;
-    font-family: Georgia, sans-serif;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 115%; /* 23px */
     letter-spacing: 1.2px;
 }
@@ -382,7 +360,6 @@ section.donation {
     font-family: Arial, sans-serif;
     font-size: 12px;
     font-style: italic;
-    font-weight: 400;
     line-height: 18px; /* 150% */
 }
 
@@ -410,10 +387,7 @@ footer {
 
 .footer__contacts-title, .address__contacts-title {
     color: #FFF;
-    font-family: Georgia, sans-serif;
     font-size: 35px;
-    font-style: normal;
-    font-weight: 400;
     line-height: 130%; /* 45.5px */
     letter-spacing: 2.1px;
 }

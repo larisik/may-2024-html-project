@@ -1,0 +1,45 @@
+@media screen and (min-width: 786px) and  (max-width: 1024px) {
+    .main__wrap {
+        align-items: flex-end;
+    }
+    .main__content {
+        padding-bottom: 42px;
+    }
+
+    .about__wrap {
+        align-items: center;
+    }
+
+    .about__text {
+        line-height: 100%;
+    }
+
+    .our-pets-card-set {
+        flex-wrap: wrap;
+    }
+
+    /*---- SECTION HELP ----*/
+    .help__title {
+        font-size: 25px;
+    }
+
+    .help__card-set {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /*---- SECTION DONATION ----*/
+    .donation__wrap {
+        align-items: center;
+    }
+    .donation__picture img {
+        width: 100%;
+    }
+
+    /*---- FOOTER ----*/
+    .footer__wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+}
